@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #201818;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 1920px;
+  max-width: 100%;
+  height: 900px;
+  max-height: 100%;
+  display: flex;
+  background-color: #201818;
+  gap: 60px;
+}
+
+.left-section {
+  flex: 1;
+  background-image: url("./assets/img/image\(2\).png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: end;
+  position: relative;
+  margin: 40px;
+}
+
+.left-section .brand {
+  font-size: 22px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 3%;
+  right: 55%;
+}
+.left-section .logo {
+  font-size: 22px;
+  font-weight: 400;
+  position: absolute;
+  top: 3%;
+  right: 63%;
+  background-image: url("./assets/img/Group.png");
+  height: 33px;
+  width: 64px;
+}
+
+.right-section {
+  flex: 1;
+  padding: 40px 40px 40px 0px;
+  background-color: #201818;
+}
+
+.form-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.right-section-form {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-container h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  line-height: 43px;
+  margin-top: 20px;
+}
+.form-container h4 {
+  font-size: 15px;
+  margin-bottom: 60px;
+  line-height: 18.34px;
+  color: rgba(126, 105, 105, 1);
+  font-weight: 400;
+}
+.form-container h1 > span,
+.form-container h4 > span {
+  color: rgba(232, 0, 4, 1);
+}
+
+.form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  width: auto;
+  background-color: rgba(32, 24, 24, 1);
+  top: -12px;
+  position: absolute;
+  padding: 2px 7px;
+  left: 20px;
+  color: rgba(126, 105, 105, 1);
+  z-index: 3;
+}
+
+.form-group > .error-input {
+  width: 100%;
+  font-size: 13px;
+  color: rgba(93, 77, 77, 1);
+  margin-top: 5px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+.form-group input {
+  width: 100%;
+
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgba(47, 36, 36, 1);
+  background-color: rgba(47, 36, 36, 1);
+  height: 46px;
+  color: #fff;
+}
+
+.group-input {
+  position: relative;
+}
+.form-group button {
+  background: rgba(69, 53, 53, 1);
+  position: absolute;
+  right: 90px;
+  color: rgba(152, 128, 128, 1);
+  border: none;
+  padding: 3px 10px;
+  top: 12px;
+  font-size: 13px;
+}
+div.form-group:nth-child(5) {
+  margin-bottom: 30px;
+}
+.form-group input:focus {
+  outline: none;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-check input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form-check label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+  font-size: 16px;
+  color: rgba(80, 66, 66, 1);
+
+  line-height: 15px;
+  font-weight: 400;
+}
+
+.form-check label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 0px solid rgba(126, 105, 105, 1);
+  background: rgba(126, 105, 105, 1);
+  transition: 0.2s;
+  font-size: 16px;
+}
+
+.form-check label a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.form-check input[type="checkbox"]:checked + label::before {
+  background: rgba(126, 105, 105, 1);
+  border-color: rgba(126, 105, 105, 1);
+}
+
+.form-check input[type="checkbox"]:checked + label::after {
+  content: "✓";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #e10600;
+  color: #fff;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #ff2a2a;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  bottom: 12px;
+  right: 46px;
+}
+.icon.user {
+  background-image: url("./assets/img/user-id-verification-solid-rounded.png");
+}
+.icon.password {
+  background-image: url("./assets/img/lock-password-solid-rounded.png");
+}
+.icon.name {
+  background-image: url("./assets/img/user-solid-rounded.png");
+}
+.icon.mail {
+  background-image: url("./assets/img/mail-02-solid-rounded.png");
+}
+
+.flag-uk {
+  width: 40px;
+  height: 40px;
+  background: rgba(47, 36, 36, 1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+  cursor: pointer;
+}
+
+.promo-code,
+.contact-support {
+  display: flex;
+  color: rgba(126, 105, 105, 1);
+  gap: 20px;
+  font-size: 15.28px;
+  font-weight: 400;
+  line-height: 18.34px;
+  letter-spacing: 0.6113292574882507px;
+  text-align: right;
+  cursor: pointer;
+}
+.promo-code > div {
+  background-image: url("./assets/img/image\(3\).png");
+  height: 16px;
+  width: 16px;
+}
